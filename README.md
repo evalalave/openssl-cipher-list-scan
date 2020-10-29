@@ -74,7 +74,7 @@ else
 fi
 ;;	
 
-	* )
+	*)
 echo -e "Incorrect protocol name specified, please use: <IP> <PORT> <http/ftp>"
 
 exit;;
