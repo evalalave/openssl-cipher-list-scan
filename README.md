@@ -12,14 +12,14 @@ A rework of the script found on the [ISE](https://www.ise.io/using-openssl-deter
 
 Donwload the 'cipherlist-host_port_protocol.sh' file from the releases page and change the file permissions.
  ```sh
-chmod -R 700 ./cipherlist-host_port_protocol.sh
+$ chmod 700 ./cipherlist-host_port_protocol.sh
 ```
 
 # Usage:
 
  ```sh
-$ ./cipherlist-host_port_protocol.sh 10.134.65.100 443 http
-$ ./cipherlist-host_port_protocol.sh 10.134.65.100 21 ftp
+$ ./cipherlist-host_port_protocol.sh 192.168.1.1 443 http
+$ ./cipherlist-host_port_protocol.sh 192.168.1.1 21 ftp
 ```
 
 # Script Content:
@@ -109,8 +109,8 @@ exit 0
 # Script Output:
 
  ```sh
-[root@rhel-100 home]# ./cipherlist-host_port_protocol.sh 10.134.65.100 21 ftp 
-Starting OpenSSL TLS scanning for 10.134.65.100 21 
+[root@rhel-100 home]# ./cipherlist-host_port_protocol.sh 192.168.1.1 21 ftp 
+Starting OpenSSL TLS scanning for 192.168.1.1 21 
 
 Certificate Subject: CN = Name Common AD 
 Certificate Issuer:  CN = CA92 
