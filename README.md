@@ -1,7 +1,6 @@
-# openssl-cipher-list-scan
 A rework of the script found on the https://www.ise.io/using-openssl-determine-ciphers-enabled-server/ page
 
-#!/bin/sh
+[code]#!/bin/sh
 
 if [ $# -ne 3 ]; then  
 cat << END	
@@ -80,6 +79,7 @@ echo -e "Incorrect protocol name specified, please use: <IP> <PORT> <http/ftp>"
 exit;;
 esac
 exit 0
+[/code]
 
 
 [root@rhel-100 home]# ./cipherlist-host_port_protocol.sh 10.134.65.100 21 ftp 
