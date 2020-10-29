@@ -1,10 +1,10 @@
 # Script using OpenSSL to determine which ciphers are enabled on a HTTP/FTP server
 
 # openssl-cipher-list-scan
-A rework of the script found on the https://www.ise.io/using-openssl-determine-ciphers-enabled-server/ page. The current script can show you any HTTP/ FTP servers:
+A rework of the script found on the https://www.ise.io/using-openssl-determine-ciphers-enabled-server/ page. The current script can show you any HTTP/ FTP server:
 
-  - Server's Certificate Subject
-  - Server's Certificate Issuer
+  - Certificate Subject
+  - Certificate Issuer
   - Supported Server Cipher(s)
 
 # Installation:
