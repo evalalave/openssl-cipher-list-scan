@@ -130,6 +130,7 @@ TLSv1.2: AES256-SHA256
 ### Todos
 
  - Add more failure checks when incorrect ports are used
+ - Add TLSv1.3 support without breaking DSA ciphers scanning
 
 License
 ----
