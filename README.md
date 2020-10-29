@@ -1,6 +1,30 @@
-A rework of the script found on the https://www.ise.io/using-openssl-determine-ciphers-enabled-server/ page
+# Script using OpenSSL to determine which ciphers are enabled on a HTTP/FTP server
 
-[code]#!/bin/sh
+# openssl-cipher-list-scan
+A rework of the script found on the https://www.ise.io/using-openssl-determine-ciphers-enabled-server/ page. The current script can show you any HTTP/ FTP servers:
+
+  - Server's Certificate Subject
+  - Server's Certificate Issuer
+  - Supported Server Cipher(s)
+
+# Installation:
+
+Donwload the 'cipherlist-host_port_protocol.sh' file from the releases and change the file permissions.
+ ```sh
+chmod -R 700 ./cipherlist-host_port_protocol.sh
+```
+
+# Usage:
+
+ ```sh
+$ ./cipherlist-host_port_protocol.sh 10.134.65.100 443 http
+$ ./cipherlist-host_port_protocol.sh 10.134.65.100 21 ftp
+```
+
+# Script Content:
+
+ ```sh
+#!/bin/sh
 
 if [ $# -ne 3 ]; then  
 cat << END	
@@ -79,9 +103,11 @@ echo -e "Incorrect protocol name specified, please use: <IP> <PORT> <http/ftp>"
 exit;;
 esac
 exit 0
-[/code]
+```
 
+# Script Output:
 
+ ```sh
 [root@rhel-100 home]# ./cipherlist-host_port_protocol.sh 10.134.65.100 21 ftp 
 Starting OpenSSL TLS scanning for 10.134.65.100 21 
 
@@ -98,3 +124,13 @@ TLSv1.2: DHE-RSA-AES256-SHA256
 TLSv1.2: ECDHE-RSA-AES128-SHA256 
 TLSv1.2: DHE-RSA-AES128-SHA256 
 TLSv1.2: AES256-SHA256 
+```
+
+### Todos
+
+ - Add more failure checks when incorrect ports are used
+
+License
+----
+
+MIT
