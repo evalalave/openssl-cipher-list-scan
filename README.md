@@ -1,8 +1,8 @@
 # openssl-cipher-list-scan
 
-# Use OpenSSL to determine which ciphers are enabled on a HTTP/FTP server
+> Use OpenSSL to determine which ciphers are enabled on a HTTP/FTP server
 
-A rework of the script found on the https://www.ise.io/using-openssl-determine-ciphers-enabled-server/ page. The current script can show you any HTTP/ FTP server:
+A rework of the script found on the [ISE](https://www.ise.io/using-openssl-determine-ciphers-enabled-server/) page. The 'openssl-cipher-list-scan' script can show you any HTTP/ FTP server:
 
   - Certificate Subject
   - Certificate Issuer
@@ -10,7 +10,7 @@ A rework of the script found on the https://www.ise.io/using-openssl-determine-c
 
 # Installation:
 
-Donwload the 'cipherlist-host_port_protocol.sh' file from the releases and change the file permissions.
+Donwload the 'cipherlist-host_port_protocol.sh' file from the releases page and change the file permissions.
  ```sh
 chmod -R 700 ./cipherlist-host_port_protocol.sh
 ```
