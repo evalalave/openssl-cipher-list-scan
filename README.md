@@ -80,3 +80,21 @@ echo -e "Incorrect protocol name specified, please use: <IP> <PORT> <http/ftp>"
 exit;;
 esac
 exit 0
+
+
+[root@rhel-100 home]# ./cipherlist-host_port_protocol.sh 10.134.65.100 21 ftp
+Starting OpenSSL TLS scanning for 10.134.65.100 21
+
+Certificate Subject: CN = Name Common AD
+Certificate Issuer:  CN = CA92
+
+Supported Server Cipher(s):
+TLSv1.2: ECDHE-RSA-AES256-GCM-SHA384
+TLSv1.2: DHE-RSA-AES256-GCM-SHA384
+TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256
+TLSv1.2: DHE-RSA-AES128-GCM-SHA256
+TLSv1.2: ECDHE-RSA-AES256-SHA384
+TLSv1.2: DHE-RSA-AES256-SHA256
+TLSv1.2: ECDHE-RSA-AES128-SHA256
+TLSv1.2: DHE-RSA-AES128-SHA256
+TLSv1.2: AES256-SHA256
