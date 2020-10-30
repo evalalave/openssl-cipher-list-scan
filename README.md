@@ -129,7 +129,7 @@ TLSv1.2: AES256-SHA256
 
 ### Todos
 
- - Make the script work with WEB address and not only IP
+ - Make the script work with hostnames
  - Add more failure checks when incorrect ports are used
  - Add TLSv1.3 support without breaking DSA ciphers scanning
  
