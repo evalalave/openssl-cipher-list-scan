@@ -132,6 +132,11 @@ TLSv1.2: AES256-SHA256
  - Make the script work with WEB address and not only IP
  - Add more failure checks when incorrect ports are used
  - Add TLSv1.3 support without breaking DSA ciphers scanning
+ 
+ ### Alternatives (way wayyy better and more complex)
+
+ - Linux - [testssl.sh](https://github.com/drwetter/testssl.sh)
+ - Windows - [sslscan](https://github.com/rbsec/sslscan)
 
 License
 ----
