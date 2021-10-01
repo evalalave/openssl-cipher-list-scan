@@ -132,7 +132,7 @@ exit 0
 
  ```sh
 [root@rhel-100 home]# ./cipherlist-host_port_protocol.sh 192.168.1.1 21 ftp 
-Starting OpenSSL TLS scanning for 192.168.1.1 21 
+Starting OpenSSL TLS scanning for 192.168.1.1:21 
 
 Certificate Subject: CN = Name Common AD 
 Certificate Issuer:  CN = CA92 
