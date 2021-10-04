@@ -10,7 +10,7 @@ A rework of the script found on the [ISE](https://www.ise.io/blog/archives/using
 
 # Installation:
 
-Download the 'cipherlist-host_port_protocol.sh' file from the releases page and change the file permissions.
+Download the 'cipherlist-host_port_protocol.sh' file from the releases page and change the file permissions. The second command is only needed if you receive a bad interpreter error.
  ```sh
 $ chmod 700 ./cipherlist-host_port_protocol.sh
 $ sed -i 's/\r//' ./cipherlist-host_port_protocol.sh
