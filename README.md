@@ -13,6 +13,7 @@ A rework of the script found on the [ISE](https://www.ise.io/using-openssl-deter
 Download the 'cipherlist-host_port_protocol.sh' file from the releases page and change the file permissions.
  ```sh
 $ chmod 700 ./cipherlist-host_port_protocol.sh
+$ sed -i 's/\r//' ./cipherlist-host_port_protocol.sh
 ```
 
 # Usage:
