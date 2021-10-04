@@ -2,7 +2,7 @@
 
 
 
-A rework of the script found on the [ISE](https://www.ise.io/using-openssl-determine-ciphers-enabled-server/) page. The 'openssl-cipher-list-scan' script can show you any HTTP/ FTP server:
+A rework of the script found on the [ISE](https://www.ise.io/blog/archives/using-openssl-determine-ciphers-enabled-server/index.html) page. The 'openssl-cipher-list-scan' script can show you any HTTP/ FTP server:
 
   - Certificate Subject
   - Certificate Issuer
